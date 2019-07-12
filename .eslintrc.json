@@ -1,0 +1,79 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "node": true,
+        "es6": true
+    },
+    "extends": [
+        "airbnb"
+    ],
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "sourceType": "module",
+        "allowImportExportEverywhere": true,
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "plugins": ["react", "import", "jsx-a11y"],
+    "rules": {
+        "no-console" : 0,
+        "indent": ["error", 4],
+        "quote-props": [2,"consistent"],
+        "arrow-parens": [2, "as-needed"],
+        "linebreak-style": 0,
+        "object-curly-newline": [2, {"consistent": true}],
+        "padded-blocks": ["error", { "blocks": "never", "switches": "never", "classes": "always" }],
+        "comma-dangle" : [2, {
+            "arrays": "never",
+            "objects": "ignore",
+            "imports": "never",
+            "exports": "never",
+            "functions": "never"
+        }],
+        "max-len": [2, { "code": 200 }],
+        "class-methods-use-this": 0,
+
+        "react/prop-types": [2, { "ignore": ["redux", "i18n", "dialog", "render"]}],
+        "react/jsx-indent-props": [2, 4],
+        "react/jsx-indent": [2, 4],
+        "react/jsx-boolean-value": [2, "always"],
+        "react/forbid-prop-types": 0,
+        "react/jsx-closing-bracket-location": [1, "after-props"],
+        "react/display-name": 0,
+        "react/jsx-wrap-multilines": 1,
+        "react/sort-comp": 0,
+        "jsx-a11y/label-has-for": 0,
+        "jsx-a11y/click-events-have-key-events": 0,
+        "jsx-a11y/interactive-supports-focus": 0,
+        "jsx-a11y/label-has-associated-control": 0
+
+    },
+    "settings": {
+        "import/resolver": {
+            "babel-module": {
+                "paths": [
+                    "./src",
+                    "./src/app",
+                    "./src/app/components",
+                    "./src/app/components/atoms",
+                    "./src/app/components/molecules",
+                    "./src/app/components/organisms",
+                    "./src/app/components/templates",
+                    "./src/app/components/pages",
+                    "./src/app/modules",
+                    "./src/app/services",
+                    "./src/app/constants",
+                    "./src/app/redux/actions",
+                    "./src/app/redux/reducers",
+                    "./src/app/redux/sagas",
+                    "./src/app/redux/services",
+                    "./src/app/redux/store",
+                    "./src/assets",
+                    "./src/styles"
+                ]
+            }
+        }
+    }
+}
