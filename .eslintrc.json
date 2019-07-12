@@ -20,7 +20,6 @@
     "rules": {
         "no-console" : 0,
         "indent": ["error", 4],
-        "valid-typeof": ["error", 4],
         "quote-props": [2,"consistent"],
         "arrow-parens": [2, "as-needed"],
         "linebreak-style": 0,
