@@ -9,7 +9,7 @@ function CWE_129(x) { // ARRAY_INDEX_NEGATIVE
         arr[x] = 3;
     }
 }
-
+/*
 function CWE_398() { // IDENTICAL_BRANCHES
     if (x >= 0) {
         y = x;
@@ -92,3 +92,4 @@ function CWE_843() { // BAD_TYPE_COERCION
     var backPosition;
     return "backgroundPosition: " + backPosition + "px; ";
 }
+*/
